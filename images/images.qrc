@@ -1,0 +1,7 @@
+<RCC>
+	<qresource prefix="/images">
+		<file>HMI_Radiocontrol_Car.png</file>
+		<file>triangle_front_full.png</file>
+		<file>triangle_back_full.png</file>
+	</qresource>
+</RCC>
