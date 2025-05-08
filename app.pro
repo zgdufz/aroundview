@@ -15,7 +15,12 @@ HEADERS += camera.h \
 RESOURCES += AroundView.qrc\
 				images/images.qrc
 
-INCLUDEPATH += /usr/include/opencv2
-DEPENDPATH += /usr/include/opencv2
+#INCLUDEPATH += /usr/include/opencv2
+#DEPENDPATH += /usr/include/opencv2
 
 LIBS += `pkg-config opencv --libs`
+
+LIBS += -lopencv_core \
+	-lopencv_highgui \
+	-lopencv_videoio \
+	-lopencv_imgproc \

@@ -69,7 +69,7 @@ void CameraItem::paint(QPainter *painter)
 		if(data) {
 			memcpy(src.data, data, src.step * src.rows);
 
-			cv::cvtColor(src, dst, CV_BGRA2RGB);
+			cv::cvtColor(src, dst, cv::COLOR_BGRA2RGB);
 
 			QImage output_img(dst.data, dst.cols, dst.rows, QImage::Format_RGB888);
 
